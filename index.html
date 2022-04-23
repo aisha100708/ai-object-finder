@@ -1,0 +1,45 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bg">
+<center>
+<h1 class="btn btn-danger">
+  AI Object Finder
+  <h3 class="btn btn-info">
+  Note: The input name which you will give should match the names present in CoCo model, then only it will detect.
+  </h3>
+</h1>
+<br>
+<br>
+<input placeholder="Write here what you want to find...." id="input_name">
+<button onclick="start()" class="btn btn-primary">
+  Start
+</button>
+<br>
+<h2 id="status" class="btn btn-success">
+  Status:
+</h2>
+<h2 id="object_detected_or_not" class="btn btn-warning">
+</h2>
+<div id="copyright_footer">
+  Made by - Aishwarya Vennelakanti
+</div>
+</center>
+<script src="main.js"></script>
+
+</body>
+
+</html>  
